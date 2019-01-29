@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Formulier</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Merlijn Rol">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<h1>Vragenlijst over uw woning</h1>
+<form action="http://bla.hosts.ma-cloud.nl/pop.php" method="post">
+    <fieldset>
+        <legend>Contactgegevens</legend>
+        Naam: <input type="text" name="custname" autofocus>
+        <br><br>
+        Leeftijd: <input type="text" name="custname">
+        <br><br>
+        Geslacht: <input type="text" name="custname">
+        <br><br>
+        Email: <input type="text" name="custname">
+    </fieldset> <br>
+
+    <fieldset>
+        <legend>Persoonlijke vragen</legend>
+        Voelt u zich op uw gemak?
+        <br>
+        <form>
+        <input type="radio" name="2" value="1" id="nummer1"><label for="nummer1">Ja</label>
+        <input type="radio" name="2" value="2" id="nummer2"><label for="nummer2">Nee</label>
+        <input type="radio" name="2" value="3" id="nummer3"><label for="nummer3">Beetje</label>
+        <input type="radio" name="2" value="4" id="nummer4"><label for="nummer4">Kan niet zeggen</label>
+        </form>
+        <br><br>
+        Zou u ergens anders gaan wonen?
+        <br>
+        <form>
+        <input type="radio" name="2" value="1" id="nummer5"><label for="nummer5">Ja, maar gewoon in Nederland</label>
+        <input type="radio" name="2" value="2" id="nummer6"><label for="nummer6">Ja, maar in een ander land</label>
+        <input type="radio" name="2" value="3" id="nummer7"><label for="nummer7">Nee</label>
+            <input type="radio" name="2" value="4" id="nummer8"><label for="nummer8">Kan niet zeggen</label>
+        </form>
+        <br><br>
+        Heeft u genoeg voorzieningen in uw huis?
+        <br>
+        <form>
+        <input type="radio" name="2" value="1" id="nummer9"><label for="nummer9">Ja</label>
+        <input type="radio" name="2" value="2" id="nummer10"><label for="nummer10">Nee</label>
+        <input type="radio" name="2" value="3" id="nummer11"><label for="nummer11">Kan niet zeggen</label>
+        </form>
+
+        <br><br>
+        Hoeveel mensen wonen in het huis?
+        <br>
+        <select>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6+">6 en/of meer</option>
+        </select>
+        <br>
+    </fieldset><br>
+
+    <fieldset>
+        <legend>Woning</legend>
+        Met welke onderdelen van het huis bent u niet blij mee?<br>
+        <label>
+        <input type="checkbox" name="checkbox1" value="checkbox1">Woonkamer
+        </label>
+        <label>
+        <input type="checkbox" name="checkbox2" value="checkbox2">Keuken
+        </label>
+        <label>
+        <input type="checkbox" name="checkbox3" value="checkbox3">Slaapkamers
+        </label>
+        <label>
+        <input type="checkbox" name="checkbox4" value="checkbox4">Balkon
+        </label>
+        <label>
+        <input type="checkbox" name="checkbox5" value="checkbox5">Zolder
+        </label>
+        <label>
+        <input type="checkbox" name="checkbox5" value="checkbox6">Kelder
+        </label>
+        <label>
+        <input type="checkbox" name="checkbox5" value="checkbox7">Tuin
+        </label>
+        <label>
+        <input type="checkbox" name="checkbox5" value="checkbox7">Anders...
+        </label>
+        <br>
+        Schrijf hier de redenen op.
+        <br>
+        <textarea rows="8" cols="80"></textarea>
+    </fieldset> <br>
+    <input type="submit" value="Verzend antwoorden">
+</form>
+</body>
+
+<footer>
+    <div id="validatie">
+        <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+            <img src="https://blanken5.home.xs4all.nl/afb/valid-html5-blue.png" alt="Valide HTML5"></a>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+            <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+        </a>
+    </div>
+</footer>
+
+</html>
