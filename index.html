@@ -13,42 +13,46 @@
 <form action="http://bla.hosts.ma-cloud.nl/pop.php" method="post">
     <fieldset>
         <legend>Contactgegevens</legend>
-        Naam: <input type="text" name="naam" autofocus>
+        Naam: <input type="text" name="naam" autofocus required>
         <br><br>
-        Leeftijd: <input type="text" name="leeftijd">
+        Leeftijd: <input type="text" name="leeftijd" required>
         <br><br>
-        Geslacht: <input type="text" name="geslacht">
-        <br><br>
-        Email: <input type="text" name="email">
+        <section>
+            <input type="radio" name="gender" value="male" id="male" required><label for="male">Man</label>
+            <input type="radio" name="gender" value="female" id="female" required><label for="female">Vrouw</label>
+            <input type="radio" name="gender" value="secret" id="secret" required><label for="secret">Zeg ik liever niet</label>
+        </section>
+        <br>
+        Email: <input type="text" name="email" required>
     </fieldset> <br>
 
     <fieldset>
         <legend>Persoonlijke vragen</legend>
         Voelt u zich op uw gemak?
         <br>
-        <form>
-        <input type="radio" name="1" value="1" id="nummer1"><label for="nummer1">Ja</label>
-        <input type="radio" name="1" value="2" id="nummer2"><label for="nummer2">Nee</label>
-        <input type="radio" name="1" value="3" id="nummer3"><label for="nummer3">Beetje</label>
-        <input type="radio" name="1" value="4" id="nummer4"><label for="nummer4">Kan niet zeggen</label>
-        </form>
+        <section>
+            <input type="radio" name="1" value="1" id="nummer1" required><label for="nummer1">Ja</label>
+            <input type="radio" name="1" value="2" id="nummer2" required><label for="nummer2">Nee</label>
+            <input type="radio" name="1" value="3" id="nummer3" required><label for="nummer3">Beetje</label>
+            <input type="radio" name="1" value="4" id="nummer4" required><label for="nummer4">Kan niet zeggen</label>
+        </section>
         <br><br>
         Zou u ergens anders gaan wonen?
         <br>
-        <form>
-        <input type="radio" name="1" value="1" id="nummer5"><label for="nummer5">Ja, maar gewoon in Nederland</label>
-        <input type="radio" name="1" value="2" id="nummer6"><label for="nummer6">Ja, maar in een ander land</label>
-        <input type="radio" name="1" value="3" id="nummer7"><label for="nummer7">Nee</label>
-            <input type="radio" name="1" value="4" id="nummer8"><label for="nummer8">Kan niet zeggen</label>
-        </form>
+        <section>
+            <input type="radio" name="2" value="1" id="nummer5" required><label for="nummer5">Ja, maar gewoon in Nederland</label>
+            <input type="radio" name="2" value="2" id="nummer6" required><label for="nummer6">Ja, maar in een ander land</label>
+            <input type="radio" name="2" value="3" id="nummer7" required><label for="nummer7">Nee</label>
+            <input type="radio" name="2" value="4" id="nummer8" required><label for="nummer8">Kan niet zeggen</label>
+        </section>
         <br><br>
         Heeft u genoeg voorzieningen in uw huis?
         <br>
-        <form>
-        <input type="radio" name="1" value="1" id="nummer9"><label for="nummer9">Ja</label>
-        <input type="radio" name="1" value="2" id="nummer10"><label for="nummer10">Nee</label>
-        <input type="radio" name="1" value="3" id="nummer11"><label for="nummer11">Kan niet zeggen</label>
-        </form>
+        <section>
+            <input type="radio" name="3" value="1" id="nummer9" required><label for="nummer9">Ja</label>
+            <input type="radio" name="3" value="2" id="nummer10" required><label for="nummer10">Nee</label>
+            <input type="radio" name="3" value="3" id="nummer11" required><label for="nummer11">Kan niet zeggen</label>
+        </section>
 
         <br><br>
         Hoeveel mensen wonen in het huis?
@@ -61,8 +65,7 @@
             <option value="5">5</option>
             <option value="6+">6 en/of meer</option>
         </select>
-        <br>
-    </fieldset><br>
+    </fieldset>
 
     <fieldset>
         <legend>Woning</legend>
@@ -94,11 +97,13 @@
         <br>
         Schrijf hier de redenen op.
         <br>
-        <textarea rows="8" cols="80"></textarea>
+        <textarea rows="8" cols="80" required></textarea>
     </fieldset> <br>
     <input type="submit" value="Verzend antwoorden">
 </form>
 </body>
+
+<br>
 
 <footer>
     <div id="validatie">
